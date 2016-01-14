@@ -30,18 +30,18 @@ body {
 
 }
 .poster{
+
 	float:left;
     height:200;
     width:150;
     position:relative;
     margin-right: 10px;
-    
     border-radius:25px;
-
-    
     overflow:hidden;
+    margin-bottom: 20px;
 }
 img{
+
     /*position:absolute;*/
     left:-50%; right:-50%; top:0;
     margin:auto;
@@ -49,7 +49,11 @@ img{
 }
 
 #movieInfo {
+    clear: left;
+
      position:relative;
+     display: block;
+
 
 }
 

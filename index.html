@@ -26,13 +26,11 @@
 				</form>
 			</div>
 
-			<div id="movieInfo">
-				<div class="poster">Poster</div>
-				<h3 class="title">Title</h3>
-				<p class="runtime">RunTime</p>
+			<div id="movieInfo" ng-repeat="movie in movies">
+				<div class="poster"><img src={{movie.Poster}}/></div>
+				<h3 class="title">  {{movie.Title}} </h3>
+				<p class="year"> {{movie.Year}}</p>
 
-				<p class="rating">Rating</p>
-				<p class="plot">Plot</p>
 			</div>
 		</div>
 	</div>
