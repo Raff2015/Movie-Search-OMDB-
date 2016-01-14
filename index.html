@@ -1,0 +1,59 @@
+<!DOCTYPE <!DOCTYPE html>
+<html ng-app = "main">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<div ng-controller="MainController as main">
+		<div class="container">
+			<h2> Movie Search Page </h2>
+			<h1 id="headingSearch"> Search for a movie... </h1>
+			<div class="center">
+				<form class="form-inline " name= "movieForm" id="movieForm" ng-submit="movieForm.$valid && main.search()" novalidate >
+					<div class="form-group">
+						<input class="form-control " autocomplete="off" ng-model="main.title" id="title" type="text" placeholder= "Title..." required  />
+					</div>
+					<!-- <div> movieForm is {{movieForm.$valid}}  </div> -->
+					<!-- <button> Search! </button> -->
+					<input class="btn btn-primary" type="submit" value="Search!">
+				</form>
+			</div>
+
+			<div id="movieInfo">
+				<div class="poster">Poster</div>
+				<h3 class="title">Title</h3>
+				<p class="runtime">RunTime</p>
+
+				<p class="rating">Rating</p>
+				<p class="plot">Plot</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

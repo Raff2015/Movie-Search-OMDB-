@@ -1,0 +1,58 @@
+.ng-valid.ng-dirty {
+
+	border-color: #78CA89;
+}
+
+
+body {
+	background-color:  #e6e6e6;
+
+}
+.center{
+     position:absolute;
+     width:300px;
+     height:200px;
+     z-index:15;
+     top:50%;
+     left:50%;
+     margin:-100px 0 0 -150px;
+}
+
+#headingSearch{
+     position:absolute;
+     width:800px;
+     height:200px;
+     z-index:15;
+     top:50%;
+     left:50%;
+     margin:-160px 0 0 -180px;
+     color:  #000066;
+
+}
+.poster{
+	float:left;
+    height:200;
+    width:150;
+    position:relative;
+    margin-right: 10px;
+    
+    border-radius:25px;
+
+    
+    overflow:hidden;
+}
+img{
+    /*position:absolute;*/
+    left:-50%; right:-50%; top:0;
+    margin:auto;
+    height:100%; width:100%;
+}
+
+#movieInfo {
+     position:relative;
+
+}
+
+.title{
+	/*float:right;*/
+}
