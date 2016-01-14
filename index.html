@@ -7,9 +7,14 @@
 	<title></title>
 </head>
 <body>
+
 	<script type="text/javascript" src="js/angular.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<div id="bg">
+	  	<img src="images/bg.jpg" alt="">
+	</div>
 
 	<div ng-controller="MainController as main">
 		<div class="container">
@@ -30,7 +35,6 @@
 				<div class="poster"><img src={{movie.Poster}}/></div>
 				<h3 class="title">  {{movie.Title}} </h3>
 				<p class="year"> {{movie.Year}}</p>
-
 			</div>
 
 		</div>

@@ -4,8 +4,11 @@
 	app.controller("MainController", function ($scope) {
 		$scope.movies = [];
 
-		var $Form = $('#movieForm'), $Container = $('#movieInfo'), $Center=$('.center'), $Heading=$('#headingSearch');
+		var $Form = $('#movieForm'), $Back = $('#bg'), $Container = $('#movieInfo'), $Center=$('.center'), $Heading=$('#headingSearch');
 		this.search = function() {
+			console.log($(bg).length);
+
+			$(bg).html('');
 
 			$(".center").removeClass();
 			$Heading.hide();
